@@ -389,7 +389,7 @@ namespace EAS_Encoder_GUI {
 				dict.Add(split[1], split[0]);	// C# stores dict value as pointer to dictionary; no need to reassign dict to SAMECodes[state]
 			}
 
-			window.AddStates(SAMECodes.Keys.ToArray());
+			window.AddStates(SAMECodes.Keys.ToArray()); ;
 
 			Application.Run(window);
 		}
