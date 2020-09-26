@@ -116,7 +116,7 @@ namespace EAS_Encoder_GUI {
 				}
 			}
 
-			if (!Regex.IsMatch(senderIDTextBox.Text, "[A-Z0-9]{8}")) {
+			if (Regex.IsMatch(senderIDTextBox.Text, "[a-z]")) {
 				DialogResult response = MessageBox.Show("Specification states that the sender ID is in all caps. Bring sender ID to all caps?\n" +
 					"Click cancel to terminate tone generation.", "Sender ID outside of specifications",
 					MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information);

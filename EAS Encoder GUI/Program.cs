@@ -231,6 +231,7 @@ namespace EAS_Encoder_GUI {
 			string LLLLLL = senderID;
 
 			int volume = 5000;
+
 			int[] headerData = GenerateBinaryHeaders($"{preamble}ZCZC-{ORG}-{EEE}-{PSSCCC}+{TTTT}-{JJJ}{HH}{MM}-{LLLLLL}-", volume);
 			int[] eomData = GenerateBinaryHeaders($"{preamble}NNNN", volume);
 			int[] silenceData = new int[totalSilenceData];   // compiler initalizes all elements to 0
